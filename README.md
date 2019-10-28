@@ -6,6 +6,8 @@ npm install -D @pderas/eslint-config
 
 Then create a .eslintrc.js file in the root of the project with the following contents.
 ```js
+// .eslintrc.js
+
 require("@pderas/eslint-config/patch")
 
 module.exports = {
