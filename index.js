@@ -50,6 +50,13 @@ module.exports = {
             "error",
             "double"
         ],
+        "vue/max-attributes-per-line": [
+            errorLevel,
+            {
+                "singleline": 3,
+                "multiline": { "max": 1, "allowFirstLine": false }
+            }
+        ],
         "vue/html-closing-bracket-newline": [
             "error",
             { "singleline": "never", "multiline": "never" }
