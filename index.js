@@ -5,11 +5,11 @@ const errorLevel = isDev ? "warn" : "error";
 module.exports = {
     "root": true,
     "env": { "node": true },
+    "plugins": ["vue", "prettier"],
     "extends": [
         "plugin:vue/recommended",
         "eslint:recommended",
-        "prettier",
-        "prettier/vue"
+        "prettier"
     ],
     "rules": {
         "no-debugger": errorLevel,
@@ -54,7 +54,7 @@ module.exports = {
             errorLevel,
             {
                 "singleline": 3,
-                "multiline": { "max": 1, "allowFirstLine": false }
+                "multiline": 1
             }
         ],
         "vue/html-closing-bracket-newline": [
@@ -128,7 +128,9 @@ module.exports = {
             "always"
         ]
     },
+    "parser": "vue-eslint-parser",
     "parserOptions": {
-        "parser": "babel-eslint"
+        "parser": "@babel/eslint-parser",
+        "sourceType": "module"
     }
 }
