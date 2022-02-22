@@ -1,6 +1,6 @@
 {
   "name": "@pderas/eslint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Default pderas eslint configuration",
   "main": "index.js",
   "author": "Reed Jones <reed.jones@pderas.com>",
