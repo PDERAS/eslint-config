@@ -126,6 +126,9 @@ module.exports = {
         "vue/mustache-interpolation-spacing": [
             "error",
             "always"
+        ],
+        "key-spacing": [
+            "error", { "beforeColon": false, "afterColon": true }
         ]
     },
     "parserOptions": {
